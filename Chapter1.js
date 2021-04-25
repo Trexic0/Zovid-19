@@ -32,16 +32,16 @@ function changeImage(Scenario){
     // Citation: (Duckett, J., 2014)
     switch (id) {
         case 1: 
-            document.getElementById("scene").src = "/Images/AfterChar.png"
+            document.getElementById("scene").src = "/Images/TV.png"
             break
         case 2:
-            document.getElementById("scene").src = "/Images/AfterChar.png"
+            document.getElementById("scene").src = "/Images/Announcement.png"
             // Citation: (W3schools.com, 2021)
             document.getElementById("scene").style.height = "80%"
-            document.getElementById("scene").style.width = "90%"
+            document.getElementById("scene").style.width = "80%"
             break
         case 3: 
-            document.getElementById("scene").src = "/Images/GameLogo.png"
+            document.getElementById("scene").src = "/Images/LockedDoor.png"
             document.getElementById("scene").style.height = "40%"
             document.getElementById("scene").style.width = "50%"
         }
