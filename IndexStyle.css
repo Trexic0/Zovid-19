@@ -1,0 +1,26 @@
+body {
+    background-color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#Image{
+    width:100%;
+}
+#Start{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 30%;
+    height: 50%;
+}
+
+#Scene{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    width: 30%;
+    height: 50%;
+}

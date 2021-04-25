@@ -1,0 +1,23 @@
+body{
+    background-color:black;
+    color: white;
+}
+
+.scene-selection {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-evenly;
+    align-content: left;
+    min-height: 40vh;
+    
+}
+
+.scene-selection a:hover{
+    background-color: grey;
+    padding: 5px;
+}
+
+.scene-selection a:visited{
+    color: white;
+}
