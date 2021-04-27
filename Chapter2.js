@@ -45,24 +45,28 @@ function showScenario(ScenarioIndex){
 
 function selectOption(option) {
     var nextScenarioId = option.nextScenario
-    relocation(nextScenarioId)
     /* replaces old inventory with new
     Citation: (Mozilla.org, 2021)*/
     Inventory = Object.assign(Inventory, option.setInventory)
+    relocation(nextScenarioId, Inventory)
     // calls the showScenario function
     showScenario(nextScenarioId)
     
 }
 
-function relocation(nextScenarioId){
+function relocation(nextScenarioId, Inventory){
     //when index -1 takes to next chapter
     if ( nextScenarioId <= 0 ) {
+        /* Sets the inventory as a string and saves it to the local storage
+        Citation: (LogRocket Blog, 2020) */
+        let InventoryString = JSON.stringify(Inventory)
+        localStorage.setItem("InventoryString", InventoryString)
         /*Goes to the location for next chapter html page
         Citation: (Codegrepper.com, 2019)*/
-        window.location.href = "index.html"
+        window.location.href = "chap3.html"
     }
-    //checks if index is 10, which is the set value to dead for this chapter
-    else if ( nextScenarioId == 10 ){
+    //checks if index is 50, which is the set value to dead for this chapter
+    else if ( nextScenarioId == 50 ){
         window.location.href = "index.html"
     }
     else{
@@ -105,11 +109,13 @@ var ScenarioIndexes = [
         options: [
             {
                 text: "The Kitchen",
-                nextScenario: 4
+                nextScenario: 4,
+                setInventory: {Knife: true},
             },
             {
                 text: "The Bathroom",
-                nextScenario: 5
+                nextScenario: 5,
+                setInventory: {Bandages: true},
             }
         ]
     },
@@ -117,12 +123,11 @@ var ScenarioIndexes = [
     {
         index: 4,
         text: "You head to the kitchen and grab a knife",
-        setInventory: {Knife: true},
         options: [
             {
                 text: "Go to the Bathroom",
                 requiredInventory: (currentInventory) => currentInventory.noTimeLimit,
-                setInventory: {noTimeLimit: false},
+                setInventory: {noTimeLimit: false, Bandages: true},
                 nextScenario: 5
             },
             {
@@ -136,12 +141,11 @@ var ScenarioIndexes = [
     {
         index: 5,
         text: "You search the bathroom and find some bandages",
-        setInventory: {Bandages: true},
         options: [
             {
                 text: "Go to the Kitchen",
                 requiredInventory: (currentInventory) => currentInventory.noTimeLimit,
-                setInventory: {noTimeLimit: false},
+                setInventory: {noTimeLimit: false, Knife: true},
                 nextScenario: 4
             },
             {
@@ -172,7 +176,7 @@ var ScenarioIndexes = [
         options: [
             {
                 text: "Home Page",
-                nextScenario: 10
+                nextScenario: 50
             }
         ]
     },
@@ -202,3 +206,4 @@ var ScenarioIndexes = [
 
 //calls startGame to begin
 startGame()
+
