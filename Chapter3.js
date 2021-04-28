@@ -43,7 +43,6 @@ function showScenario(ScenarioIndex){
     
 }
 
-
 function selectOption(option) {
     var nextScenarioId = option.nextScenario
     Inventory = Object.assign(Inventory, option.setInventory)
@@ -253,7 +252,7 @@ var ScenarioIndexes = [
         options: [
             {
                 text: "Prepare",
-                setInventory: {Knife: false, Lone: true},
+                setInventory: {Knife: true, Lone: true},
                 nextScenario: 19
             }
         ]
@@ -270,7 +269,7 @@ var ScenarioIndexes = [
                 text: "Ask to Join them",
                 nextScenario: 18,
                 requiredInventory: (currentInventory) => currentInventory.Trust,
-                setInventory: {Knife:false, Team: true},
+                setInventory: {Knife: true, Team: true},
             }
         ]
     },
