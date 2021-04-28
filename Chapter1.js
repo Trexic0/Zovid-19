@@ -33,13 +33,13 @@ function changeImage(Scenario){
     switch (id) {
         case 1: 
             document.getElementById("scene").src = "./Images/TV.png"
-            break
+            return
         case 2:
             document.getElementById("scene").src = "./Images/Announcement.png"
             // Citation: (W3schools.com, 2021)
             document.getElementById("scene").style.height = "80%"
             document.getElementById("scene").style.width = "80%"
-            break
+            return
         case 3: 
             document.getElementById("scene").src = "./Images/LockedDoor.png"
             document.getElementById("scene").style.height = "40%"
