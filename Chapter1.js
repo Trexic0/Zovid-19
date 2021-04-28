@@ -44,6 +44,7 @@ function changeImage(Scenario){
             document.getElementById("scene").src = "./Images/LockedDoor.png"
             document.getElementById("scene").style.height = "40%"
             document.getElementById("scene").style.width = "50%"
+            return
         }
 }
 
