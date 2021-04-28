@@ -32,7 +32,7 @@ function changeImage(Scenario){
     // Citation: (Duckett, J., 2014)
     switch (id) {
         case 1: 
-            document.getElementById("scene").src = "/Images/TV.png"
+            document.getElementById("scene").src = "/Zovid-19/Images/TV.png"
             break
         case 2:
             document.getElementById("scene").src = "/Images/Announcement.png"
