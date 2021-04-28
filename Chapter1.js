@@ -35,13 +35,13 @@ function changeImage(Scenario){
             document.getElementById("scene").src = "./Images/TV.png"
             break
         case 2:
-            document.getElementById("scene").src = "/Images/Announcement.png"
+            document.getElementById("scene").src = "./Images/Announcement.png"
             // Citation: (W3schools.com, 2021)
             document.getElementById("scene").style.height = "80%"
             document.getElementById("scene").style.width = "80%"
             break
         case 3: 
-            document.getElementById("scene").src = "/Images/LockedDoor.png"
+            document.getElementById("scene").src = "./Images/LockedDoor.png"
             document.getElementById("scene").style.height = "40%"
             document.getElementById("scene").style.width = "50%"
         }
