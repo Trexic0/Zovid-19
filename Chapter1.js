@@ -35,7 +35,7 @@ function changeImage(Scenario){
             document.getElementById("scene").src = "https://trexic0.github.io/Zovid-19/Images/TV.png"
             return
         case 2:
-            document.getElementById("scene").src = "https://trexic0.github.io/Zovid-19/Images/Announcement.png"
+            document.getElementById("scene").src = "./Images/Announcement.png"
             // Citation: (W3schools.com, 2021)
             document.getElementById("scene").style.height = "80%"
             document.getElementById("scene").style.width = "80%"
