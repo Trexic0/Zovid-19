@@ -32,8 +32,7 @@ function changeImage(Scenario){
     // Citation: (Duckett, J., 2014)
     switch (id) {
         case 1: 
-            document.getElementById("scene").src = "/Images/TV.png"
-            break
+            return document.getElementById("scene").src = "/Images/TV.png"
         case 2:
             document.getElementById("scene").src = "/Images/Announcement.png"
             // Citation: (W3schools.com, 2021)
