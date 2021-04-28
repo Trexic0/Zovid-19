@@ -52,11 +52,6 @@ function selectOption(option) {
 
 function relocation(nextScenarioId, Inventory){
     if ( nextScenarioId <= 0 ) {
-        let InventoryString = JSON.stringify(Inventory)
-        localStorage.setItem("InventoryString", InventoryString)
-        window.location.href = "TheEnd.html"
-    }
-    else if ( nextScenarioId == 50 ){
         window.location.href = "index.html"
     }
     else{
@@ -67,16 +62,15 @@ function relocation(nextScenarioId, Inventory){
 var ScenarioIndexes = [
     {
         index: 1,
-        text: "",
+        text: "The sun starts to set as you reach the stadium. Its boarded up and theres an army guard at the front holding a riffle. \n You approach the guard. ",
         options: [
             {
-                text:"",
+                text: "",
                 nextScenario: 2
             },
             {
                 text: "",
-                nextScenario: 5,
-                requiredInventory: (currentInventory) => currentInventory.Team,
+                nextScenario: 3,
             }
         ]
     },
@@ -90,7 +84,7 @@ var ScenarioIndexes = [
             },
             {
                 text: " ",
-                nextScenario: 100
+                nextScenario: -1
             }
         ]
     }
