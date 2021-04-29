@@ -55,10 +55,10 @@ function relocation(nextScenarioId, Inventory){
     if ( nextScenarioId <= 0 ) {
         let InventoryString = JSON.stringify(Inventory)
         localStorage.setItem("InventoryString", InventoryString)
-        window.location.href = "/HTML/chap4.html"
+        window.location.href = "./chap4.html"
     }
     else if ( nextScenarioId == 50 ){
-        window.location.href = "/index.html"
+        window.location.href = "./index.html"
     }
     else{
         return null

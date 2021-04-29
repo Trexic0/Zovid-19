@@ -52,7 +52,7 @@ function selectOption(option) {
 
 function relocation(nextScenarioId, Inventory){
     if ( nextScenarioId <= 0 ) {
-        window.location.href = "/index.html"
+        window.location.href = "index.html"
     }
     else{
         return null
