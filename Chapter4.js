@@ -221,7 +221,7 @@ var ScenarioIndexes = [
     },
     {
         index: 13,
-        text: "You start to search the room. You start with the cupboards pulling everything out and looking for anything useful to take with you. You grab some basic medical supplies and shove them in your bag. The next cupboard you find a bottle of painkillers in. \n You take 2 Pain Killers. \n You put the rest of the bottle in your bag in case you need them again later and head to the door. \n You look through the window in the door into the hallway trying to figure out where you want to go next. You notice a sign on the wall opposite you saying Basement and pointing to the right. There must be some stairs over there, I wonder if there’s anything useful down there. \n \n Should you investigate further or leave for the safe camp?",
+        text: "You start to search the room. You start with the cupboards pulling everything out and looking for anything useful to take with you. You grab some basic medical supplies and shove them in your bag. The next cupboard you find a bottle of painkillers in. \n You take 2 Painkillers. \n You put the rest of the bottle in your bag in case you need them again later and head to the door. \n You look through the window in the door into the hallway trying to figure out where you want to go next. You notice a sign on the wall opposite you saying Basement and pointing to the right. There must be some stairs over there, I wonder if there’s anything useful down there. \n \n Should you investigate further or leave for the safe camp?",
         options: [
             {
                 text: "Leave",
