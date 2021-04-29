@@ -57,7 +57,7 @@ function selectOption(option) {
 
 function relocation(nextScenarioId){
     if ( nextScenarioId <= 0 ) {
-        window.location.href = "/chap2.html"
+        window.location.href = "chap2.html"
     }
     else{
         return null
