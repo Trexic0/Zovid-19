@@ -54,16 +54,16 @@ function relocation(nextScenarioId, Inventory){
     if ( nextScenarioId <= 0 ) {
         let InventoryString = JSON.stringify(Inventory)
         localStorage.setItem("InventoryString", InventoryString)
-        window.location.href = "./TheEnd.html"
+        window.location.href = "/HTML/TheEnd.html"
     }
     else if ( nextScenarioId == 50 ){
-        window.location.href = "./index.html"
+        window.location.href = "/index.html"
     }
     else if ( nextScenarioId == 75 ){
-        window.location.href = "./Companion.html"
+        window.location.href = "/HTML/Companion.html"
     }
     else if ( nextScenarioId == 100 ){
-        window.location.href = "./EasterEgg.html"
+        window.location.href = "/HTML/EasterEgg.html"
     }
     else{
         return null
