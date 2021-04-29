@@ -35,13 +35,13 @@ function changeImage(Scenario){
             document.getElementById("scene").src = "https://trexic0.github.io/Zovid-19/Images/TV.png"
             return
         case 2:
-            document.getElementById("scene").src = "/Images/Announcement.png"
+            document.getElementById("scene").src = "./Images/Announcement.png"
             // Citation: (W3schools.com, 2021)
             document.getElementById("scene").style.height = "80%"
             document.getElementById("scene").style.width = "80%"
             return
         case 3: 
-            document.getElementById("scene").src = "/Images/LockedDoor.png"
+            document.getElementById("scene").src = "./Images/LockedDoor.png"
             document.getElementById("scene").style.height = "40%"
             document.getElementById("scene").style.width = "50%"
             return
@@ -57,7 +57,7 @@ function selectOption(option) {
 
 function relocation(nextScenarioId){
     if ( nextScenarioId <= 0 ) {
-        window.location.href = "/HTML/chap2.html"
+        window.location.href = "./chap2.html"
     }
     else{
         return null
