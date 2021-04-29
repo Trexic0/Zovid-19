@@ -106,7 +106,7 @@ var ScenarioIndexes = [
     },
     {
         index: 4,
-        text: "You head to the light house and climb all the stairs to the top. You can see the whole city from up here. You lay down to rest your eyes. \n \n A few hours later… \n \n You wake up to a load noise. The banging continues to get closer coming up the stairs, you look outside and see nothing. Slowly you make your way to the stairs. \n A horde of these creatures burst up all lunging at you. You’re down on the ground, 6 of the creatures in a circle around you biting into your flesh as you scream.",
+        text: "You head to the light house and climb all the stairs to the top. You can see the whole city from up here. You lay down to rest your eyes. \n \n A few hours later… \n \n You wake up to a loud noise. The banging continues to get closer coming up the stairs, you look outside and see nothing. Slowly you make your way to the stairs. \n A horde of these creatures burst up all lunging at you. You’re down on the ground, 6 of the creatures in a circle around you biting into your flesh as you scream.",
         options:[
             {
                 text: "Home Page",
@@ -295,7 +295,7 @@ var ScenarioIndexes = [
     },
     {
         index: 20,
-        text: "With the sun just risen there should be plenty light to get quite far without needing to find somewhere to rest. You head off bright and early, filled with energy and ready for the journey. \n after a few hours of walking you see a dog in the distance. What do you do?",
+        text: "With the sun just rising there should be plenty light to get quite far without needing to find somewhere to rest. You head off bright and early, filled with energy and ready for the journey. \n After a few hours of walking you see a dog in the distance. What do you do?",
         options: [
             {
                 text: "Whistle",
@@ -320,7 +320,7 @@ var ScenarioIndexes = [
     },
     {
         index: 22,
-        text: "You continue on your journey to try get as far as you can whist the suns out.",
+        text: "You continue on your journey to try get as far as you can whilst the suns out.",
         options: [
             {
                 text: "Chapter 4",
