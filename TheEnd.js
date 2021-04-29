@@ -62,32 +62,7 @@ function relocation(nextScenarioId, Inventory){
 var ScenarioIndexes = [
     {
         index: 1,
-        text: "The sun starts to set as you reach the stadium. Its boarded up and theres an army guard at the front holding a riffle. \n You approach the guard. ",
-        options: [
-            {
-                text: "Say Hi",
-                nextScenario: 2
-            },
-            {
-                text: "Pull out you gun",
-                nextScenario: 3,
-                requiredInventory: (currentInventory) => currentInventory.Gun 
-            }
-        ]
-    },
-    {
-        index: 2,
-        text: "",
-        options: [
-            {
-                text: " "
-
-            },
-            {
-                text: " ",
-                nextScenario: -1
-            }
-        ]
+        text: "To be Continued "
     }
 ]
 
