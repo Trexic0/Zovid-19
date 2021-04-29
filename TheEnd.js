@@ -65,12 +65,13 @@ var ScenarioIndexes = [
         text: "The sun starts to set as you reach the stadium. Its boarded up and theres an army guard at the front holding a riffle. \n You approach the guard. ",
         options: [
             {
-                text: "",
+                text: "Say Hi",
                 nextScenario: 2
             },
             {
-                text: "",
+                text: "Pull out you gun",
                 nextScenario: 3,
+                requiredInventory: (currentInventory) => currentInventory.Gun 
             }
         ]
     },
