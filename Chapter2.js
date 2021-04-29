@@ -63,7 +63,7 @@ function relocation(nextScenarioId, Inventory){
         localStorage.setItem("InventoryString", InventoryString)
         /*Goes to the location for next chapter html page
         Citation: (Codegrepper.com, 2019)*/
-        window.location.href = "/chap3.html"
+        window.location.href = "/HTML/chap3.html"
     }
     //checks if index is 50, which is the set value to dead for this chapter
     else if ( nextScenarioId == 50 ){
