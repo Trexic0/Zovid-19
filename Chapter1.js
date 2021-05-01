@@ -29,7 +29,6 @@ function showScenario(ScenarioIndex){
 
 function changeImage(Scenario){
     id = Scenario.index
-    // Citation: (Duckett, J., 2014)
     switch (id) {
         case 1: 
             document.getElementById("scene").src = "https://trexic0.github.io/Zovid-19/Images/TV.png"
